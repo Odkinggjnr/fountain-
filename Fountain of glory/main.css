@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css?family=400,700");
+
+:root {
+    --primaryColor: blue;
+    --mainWhite: #fff;
+    --mainBlack: #222;
+    --mainTransition: all 0.3s linear;
+    --mainSpacing: 0.1rem;
+};
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+};
+body {
+    background-color: rgb(229, 112, 96);
+    color: var(--mainBlack);
+}
+/*============navbar===============*/
+.navbar {
+    position: sticky;
+    top: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(229, 112, 96);
+    z-index: 1;
+    min-height: 2rem;
+};
+.navbar-center {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 1.5rem;
+    align-items: center;
+};
+.glory {
+    color: var(--primaryColor);
+}
+.navbar-heading{
+  align-items: center;
+    text-transform: uppercase;
+    justify-content: center;
+    top: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--mainWhite);
+    justify-items: center;
+    padding-left: 10rem;
+}
+.glory {
+    color: var(--primaryColor);
+}
+.nav-links {
+    display: flex;
+    margin-top: 0.87rem;
+    font-size: 25px;
+    justify-content: right;
+    letter-spacing: var(--mainSpacing);
+    padding: 0.57rem;
+    transition: var(--mainTransition);
+    height: 0;
+    text-transform: capitalize;
+    flex-direction: row;
+    text-decoration: none;
+}
+.links {
+    padding: 0.37rem 1rem;
+    text-decoration: none;
+}
+.nav-links :hover {
+    color: var(--primaryColor);
+    background-color: var(--mainWhite);
+}
+
+@media screen and (min-width: 396px) {
+    .nav-links  {
+      justify-content: left;
+      display: grid;
+      
+    }
+}
+.hero {
+    top: 0;
+    padding-top: 3rem;
+    min-height: calc(100vh - 10vh);
+    min-width: calc(100vw - 50px);
+    background: url("./background-image.jpeg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner{
+    text-align: center;
+   background: var(--mainWhite);
+    display: inline-block;
+    padding: 2rem;
+    margin-top: 0.12rem 2rem;
+}
+.banner-title {
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+}
+.banner-btn {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background: var(--mainBlack);
+    color: var(--mainWhite);
+    border: 1px solid var(--mainWhite);
+    transition: var(--mainTransition);
+    cursor: pointer;
+}
+.banner-btn:hover {
+    background: transparent;
+    color: var(--primaryColor);
+}
+/*--------------------End of Hero-------------*/
+/*================description===============*/
+.description {
+    align-items: center;
+    justify-items: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0.85rem;
+    margin-top: 0.85rem;
+};
+.description h1 {
+    align-items: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+   
+};
+.page-color {
+    background-color: var(--mainBlack);
+};
+.page-footer {
+    background-color: var(--mainBlack);
+};
+a :hover {
+color: var(--primaryColor);
+};
+/*==========Alert=============*/
+.alert-danger {
+    color: #721c24;
+    background: #f8d7da
+};
+.alert-success {
+    color: #155724;
+    background: #d4edda;
+};
+
+/*=============SLIDER================*/
+.prevBtn, 
+.nextBtn:hover {
+    color: grey;
+};
+
+@media screen and (min-width: 576px) {
+    .slider-container {
+        height: 45vh;
+    }
+};
+@media screen and (min-width: 768px) {
+    .slider-container{
+        height: 55vh;
+    }
+};
+@media screen and (min-width: 992px) {
+    .slider-container {
+        height: 65vh;
+    }
+}
